@@ -27,7 +27,7 @@ Brisk works on making the process of producing datatables easier and faster by k
              "title":"Input Filter Title",
              "type":"input",
              "name":"full_name",
-             "placeholder":"\u0627\u0633\u0645 \u0627\u0644\u0632\u0627\u0626\u0631...",
+             "placeholder":"Type here full name plz..",
              "classes":[
 
              ]
