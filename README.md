@@ -173,6 +173,14 @@ Brisk works on making the process of producing datatables easier and faster by k
     briskDemo.InitBrisk(); //initilaize the table and its filters HTML
     briskDemo.get(); //gets table data, and filters
     
+<strong>4. Reach Brisk table buttons:</strong>
+
+You can access any method of the injected button from the table using this format, by [data_action] which you already declared in the options:
+
+    briskDemo.datatable.element.find('[data-action="insert"]').click(function(){
+        alert();
+    });
+    
 <strong>In case you are going to enable Filters, you need to declare this GLOBALS over your entire app before step #2:</strong>
 
     const GLOBALS = {
