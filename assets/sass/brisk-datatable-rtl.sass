@@ -1,0 +1,33 @@
+.panel
+    &.rtl
+        direction: rtl
+        
+        &.brisk-filters
+            .panel-body
+                > div
+                    float: right
+                    
+        .panel-heading-controls
+            float: left
+
+            *+*
+                margin-left: 0
+                margin-right: 4px
+            
+            *
+                float: right
+        
+        table
+            thead 
+                tr 
+                    th 
+                        text-align: right
+            tbody
+                tr 
+                    &.footer
+                        margin-left: 17px  
+                        td 
+                            span 
+                                &.info
+                                    left: 5px
+                                    right: auto  

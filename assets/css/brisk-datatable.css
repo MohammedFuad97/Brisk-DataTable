@@ -1,0 +1,105 @@
+.panel {
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-color: #ddd;
+  color: #555; }
+  .panel .panel-heading {
+    color: #333;
+    background-color: #fafafa;
+    border-color: #ddd;
+    border-bottom: 2px solid #ececec; }
+    .panel .panel-heading .panel-heading-controls {
+      float: right;
+      height: 0; }
+      .panel .panel-heading .panel-heading-controls button {
+        outline: none; }
+        .panel .panel-heading .panel-heading-controls button .fa {
+          margin-top: 3px; }
+      .panel .panel-heading .panel-heading-controls .pagination {
+        margin-left: 10px;
+        padding: 0;
+        white-space: nowrap; }
+        .panel .panel-heading .panel-heading-controls .pagination.pagination-xs {
+          margin-top: -1px; }
+        .panel .panel-heading .panel-heading-controls .pagination li a, .panel .panel-heading .panel-heading-controls .pagination li span {
+          cursor: pointer;
+          position: relative;
+          float: left;
+          padding: 4px 8px;
+          line-height: 1.4;
+          text-decoration: none;
+          color: #7b7b7b;
+          background-color: transparent;
+          border: 1px solid #e4e4e4;
+          margin-right: 5px;
+          border-radius: 2px;
+          font-size: 10px; }
+        .panel .panel-heading .panel-heading-controls .pagination li a:hover {
+          border-color: #1d89cf; }
+        .panel .panel-heading .panel-heading-controls .pagination li.active a {
+          color: #fff;
+          background: #1d89cf;
+          border-color: #1d89cf; }
+          .panel .panel-heading .panel-heading-controls .pagination li.active a:hover {
+            color: #fff;
+            background: #1d89cf;
+            border-color: #1d89cf; }
+        .panel .panel-heading .panel-heading-controls .pagination li.active span {
+          color: #fff;
+          background: #1d89cf;
+          border-color: #1d89cf; }
+      .panel .panel-heading .panel-heading-controls * + * {
+        margin-left: 4px; }
+      .panel .panel-heading .panel-heading-controls * {
+        display: block;
+        float: left; }
+  .panel .panel-body {
+    padding: 0; }
+    .panel .panel-body table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-bottom: 0; }
+      .panel .panel-body table thead tr th[data-sort] {
+        cursor: pointer; }
+        .panel .panel-body table thead tr th[data-sort] i {
+          float: left; }
+      .panel .panel-body table tbody {
+        display: block;
+        overflow: auto;
+        position: relative;
+        height: 70vh; }
+        .panel .panel-body table tbody tr:nth-child(odd) td, .panel .panel-body table tbody tr:nth-child(odd) th {
+          background-color: #f5f5f5;
+          border-top: 1px solid #e4e4e4; }
+      .panel .panel-body table thead,
+      .panel .panel-body table tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed; }
+      .panel .panel-body table tr.footer {
+        position: sticky;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: #f9f9f9;
+        border-top: solid 1px #e4e4e4; }
+        .panel .panel-body table tr.footer td {
+          border: none;
+          padding: 0 5px;
+          padding-right: 6px;
+          font-size: 14px; }
+          .panel .panel-body table tr.footer td span.info {
+            position: absolute;
+            top: 0;
+            right: 5px; }
+
+.panel.brisk-filters .panel-body {
+  padding: 15px; }
+.panel.brisk-filters .panel-heading-controls .filters-switch {
+  padding: 0;
+  height: 22px; }
+
+/*# sourceMappingURL=brisk-datatable.css.map */
