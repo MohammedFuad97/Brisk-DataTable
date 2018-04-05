@@ -116,7 +116,7 @@ Brisk works on making the process of producing datatables easier and faster by k
             resource: {
                 base_url: 'http://domain-name.com',
                 entity: '/resource',
-                datatable: '/datatable-get-method' //required returned JSON format is down in this page of README 
+                datatable: '/datatable-get-method' //required returned JSON format was described in the beginning of README 
             },
             classes: [],
             buttons: [
