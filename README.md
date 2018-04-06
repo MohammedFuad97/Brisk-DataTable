@@ -175,7 +175,7 @@ Brisk works on making the process of producing datatables easier and faster by k
     
 <strong>4. Reach Brisk table buttons:</strong>
 
-You can access any method of the injected button from the table using this format, by [data_action] which you already declared in the options:
+You can access any method of the injected buttons to the table using this format, by [data_action] which you already declared in the options:
 
     briskDemo.datatable.element.find('[data-action="insert"]').click(function(){
         alert();
