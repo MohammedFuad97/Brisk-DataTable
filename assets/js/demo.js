@@ -67,4 +67,11 @@ $(function() {
 
     briskDemo.InitBrisk();
     briskDemo.get(); 
+
+    /**
+     * You can access any method of the injected buttons to the table using this format, by [data_action] which you already declared in the options:
+     */
+    briskDemo.datatable.element.find('[data-action="insert"]').click(function(){
+        alert();
+    });
 });
