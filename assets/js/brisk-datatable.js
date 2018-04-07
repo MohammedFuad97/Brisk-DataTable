@@ -179,86 +179,91 @@
             /**
              * START:: HTML Templates Appending
              */
-            var template = '';
+            this.element.html("");
 
+            var filters_template_html = '';
+            var datatable_template_html = '';
+            
             if(this.filters.enable){
+                /**
+                 * START:: Filters template
+                 */
+                filters_template_html += '<div class="panel brisk-filters">';
+                filters_template_html += '    <div class="panel-heading clearfix">';
+                filters_template_html += '        <span class="panel-title"></span>';
+                filters_template_html += '        <div class="panel-heading-controls">';
+                filters_template_html += '           <select id="filters-status" class="form-control filters-switch">';
+                filters_template_html += '               <option value="0">' + this.language.filters_status[0] + '</option>';
+                filters_template_html += '               <option value="1">' + this.language.filters_status[1] + '</option>';
+                filters_template_html += '           </select>';
+                filters_template_html += '        </div>';
+                filters_template_html += '    </div>';
+                filters_template_html += '    <div class="panel-body">';
+                filters_template_html += '    </div>';
+                filters_template_html += '</div>';
+
+                var $filters_template = $('<div />', {html: filters_template_html});
+
                 if(this.language.code === "ar"){
-                    template += '<div class="panel brisk-filters rtl">';
-                }else{
-                    template += '<div class="panel brisk-filters">';
-                }
-                template += '    <div class="panel-heading clearfix">';
-                template += '        <span class="panel-title"></span>';
-                template += '        <div class="panel-heading-controls">';
-                template += '           <select id="filters-status" class="form-control filters-switch">';
-                template += '               <option value="0">' + this.language.filters_status[0] + '</option>';
-                if(this.filters.active){
-                    template += '               <option value="1" selected>' + this.language.filters_status[1] + '</option>';
-                }else{
-                    template += '               <option value="1">' + this.language.filters_status[1] + '</option>';
-                }
-                template += '           </select>';
-                template += '        </div>';
-                template += '    </div>';
-
-                if(this.filters.active){
-                    template += '    <div class="panel-body">';
-                }else{
-                    template += '    <div class="panel-body" style="display: none;">';
+                    $filters_template.find('.panel.brisk-filters').addClass('rtl');
                 }
 
-                template += '    </div>';
-                template += '</div>';
+                if(this.filters.active){
+                    $filters_template.find('.panel.brisk-filters #filters-status option[value="1"]').attr('selected', true);
+                }else{
+                    $filters_template.find('.panel.panel-body').fadeOut();
+                }
+
+                $filters_template.find('div.panel.brisk-filters .panel-title').html(this.filters.title);
+
+                $.each(this.filters.classes, function(key, class_title){
+                    $filters_template.find('div.panel.brisk-filters').addClass(class_title);
+                });
+                //END
+                
+                //Inject Template HTML
+                this.element.append($filters_template.html());
             }
+
+            /**
+             * START:: Datatable template
+             */
+            datatable_template_html += '<div class="panel brisk-datatable">';
+            datatable_template_html += '    <div class="panel-heading">';
+            datatable_template_html += '        <span class="panel-title"></span>';
+            datatable_template_html += '        <div class="panel-heading-controls">';
+            datatable_template_html += '            <ul class="pagination pagination-xs numeric hidden"></ul>';
+            datatable_template_html += '        </div>';
+            datatable_template_html += '    </div>';
+            datatable_template_html += '    <div class="panel-body">';
+            datatable_template_html += '        <table class="table table-striped table-hover">';
+            datatable_template_html += '            <thead></thead>';
+            datatable_template_html += '            <tbody></tbody>';
+            datatable_template_html += '        </table>';
+            datatable_template_html += '    </div>';
+            datatable_template_html += '</div>';
+
+            var $datatable_template = $('<div />', {html: datatable_template_html});
 
             if(this.language.code === "ar"){
-                template += '<div class="panel brisk-datatable rtl">';
-            }else{
-                template += '<div class="panel brisk-datatable">';
-            }
-            template += '    <div class="panel-heading">';
-            template += '        <span class="panel-title"></span>';
-            template += '        <div class="panel-heading-controls">';
-            template += '            <ul class="pagination pagination-xs numeric hidden"></ul>';
-            template += '        </div>';
-            template += '    </div>';
-            template += '    <div class="panel-body">';
-            template += '        <table class="table table-striped table-hover">';
-            template += '            <thead></thead>';
-            if(this.datatable.tbody !== undefined && this.datatable.tbody.height !== undefined){
-                template += '            <tbody style="height: ' + this.datatable.tbody.height + ';"></tbody>';
-            }else{
-                template += '            <tbody></tbody>';
-            }
-            template += '        </table>';
-            template += '    </div>';
-            template += '</div>';
-
-            var $template = $('<div />', {html: template});
-
-            //filters panel title
-            if(this.filters.title !== undefined && $.trim(this.filters.title) !== ""){
-                $template.find('div.panel.brisk-filters .panel-title').html(this.filters.title);
+                $datatable_template.find('.panel.brisk-datatable').addClass('rtl');
             }
 
-            //table panel title
-            if(this.datatable.title !== undefined && $.trim(this.datatable.title) !== ""){
-                $template.find('div.panel.brisk-datatable .panel-title').html(this.datatable.title);
-            }
+            $datatable_template.find('.panel.brisk-datatable tbody').css({'height': this.datatable.tbody.height});
+            $datatable_template.find('div.panel.brisk-datatable .panel-title').html(this.datatable.title);
 
             $.each(this.datatable.buttons, function(key, button){
-                $template.find('div.panel.brisk-datatable .panel-heading-controls').prepend('<button class="' + button.classes.button + '" data-action="' + button.data_action + '"><span class="' + button.classes.icon + '"></span>&nbsp;&nbsp;' + button.title + '</button>');
-            });
-
-            $.each(this.filters.classes, function(key, class_title){
-                $template.find('div.panel.brisk-filters').addClass(class_title);
+                $datatable_template.find('div.panel.brisk-datatable .panel-heading-controls').prepend('<button class="' + button.classes.button + '" data-action="' + button.data_action + '"><span class="' + button.classes.icon + '"></span>&nbsp;&nbsp;' + button.title + '</button>');
             });
 
             $.each(this.datatable.classes, function(key, class_title){
-                $template.find('div.panel.brisk-datatable').addClass(class_title);
+                $datatable_template.find('div.panel.brisk-datatable').addClass(class_title);
             });
+            //END
 
-            this.element.html($template.html());
+            //Inject Template HTML
+            this.element.append($datatable_template.html());
+
             //END:: HTML Templates Appending
             
             var briskDataTable = this;
