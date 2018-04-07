@@ -2,52 +2,95 @@
     $.BriskDataTable = function (element, initOptions) {
         this.element = (element instanceof $) ? element : $(element);
 
+        initOptions = $.BriskDataTable.initialOptionsVerification(initOptions);
+        
+        this.initialOptionsSetup(initOptions);
+
+        this.initialImplementations();
+    };
+
+    $.BriskDataTable.initialOptionsVerification = function(initOptions){
+        //START:: Language Attribute
         if(initOptions.language === undefined){
             initOptions.language = "ar";
         }
-        
-        this.language = $.BriskDataTable.languages[initOptions.language];
+        //END
 
-        this.datatable = initOptions.datatable;
-        this.filters = initOptions.filters;
-        
-        if(this.filters == undefined || this.filters.enable == undefined){
-            this.filters = {
+        //START:: Filters Attributes
+        if(initOptions.filters === undefined){
+            initOptions.filters = {
                 enable: false
             };
         }
-
-        this.filters.initialized = false;
-        
-        this.datatable.current_page = 1;
-
-        if(this.datatable.refresh.enable == undefined || this.datatable.refresh.enable){
-            this.datatable.buttons.unshift({
-                data_action: "refresh",
-                classes: {
-                    button: "btn btn-xs btn-warning",
-                    icon: "fa fa-sync"
-                },
-                title: this.language.buttons.refresh
-            });
+        if(initOptions.filters.enable == undefined){
+            initOptions.filters.enable = false;
         }
+        if(initOptions.filters.enable){
+            if(initOptions.filters.title == undefined){
+                initOptions.filters.title = $.BriskDataTable.languages[initOptions.language].filters.title;
+            }
+            if(initOptions.filters.classes == undefined){
+                initOptions.filters.classes = [];
+            }
+            if(initOptions.filters.active == undefined){
+                initOptions.filters.active = false;
+            }
+        }
+        //END
 
+        //START:: Datatable Attributes
         /**
-         * START:: Overridden Methods Setup
+         * :::::::::::::::::::::::::::::::::::::::::::::::
+         * WARNING:
+         * STILL WE NEED TO DO SMTH WHEN [datatable] IT SELF IS NOT DECLARED, [resource], [order_by]
+         * :::::::::::::::::::::::::::::::::::::::::::::::
          */
-        if(typeof this.datatable.row_format == "function"){
-            this.row_format = this.datatable.row_format;
+        if(initOptions.datatable.title === undefined){
+            initOptions.datatable.title = $.BriskDataTable.languages[initOptions.language].datatable.title;
         }
+        if(initOptions.datatable.classes == undefined){
+            initOptions.datatable.classes = [];
+        }
+        if(initOptions.datatable.buttons == undefined){
+            initOptions.datatable.buttons = [];
+        }
+        if(initOptions.datatable.refresh == undefined){
+            initOptions.datatable.refresh = {
+                enable: true,
+                clear: false
+            };
+        }
+        if(initOptions.datatable.refresh.enable == undefined){
+            initOptions.datatable.refresh.enable = true;
+        }
+        if(initOptions.datatable.refresh.clear == undefined){
+            initOptions.datatable.refresh.clear = false;
+        }
+        if(initOptions.datatable.execution_time == undefined){
+            initOptions.datatable.execution_time = true;
+        }
+        if(initOptions.datatable.tbody == undefined){
+            initOptions.datatable.tbody = {
+                height: '60vh'
+            };
+        }
+        if(initOptions.datatable.tbody.height == undefined){
+            initOptions.datatable.tbody.height = '60vh';
+        }
+        //END
 
-        if(typeof this.datatable.row_reformat == "function"){
-            this.row_reformat = this.datatable.row_reformat;
-        }
-        //END:: Overridden Methods Setup
-    };
+        return initOptions;
+    } 
 
     $.BriskDataTable.languages = {
         ar: {
             code: "ar",
+            filters: {
+                title: "أدوات البحث"
+            },
+            datatable: {
+                title: "النتائج"
+            },
             filters_status: {
                 0: "تعطيل",
                 1: "تفعيل"
@@ -70,6 +113,12 @@
         },
         en: {
             code: "en",
+            filters: {
+                title: "Filtering Tools"
+            },
+            datatable: {
+                title: "Results"
+            },
             filters_status: {
                 0: "Deactivated",
                 1: "Activated"
@@ -93,6 +142,39 @@
     }
     
     $.BriskDataTable.prototype = {
+        initialOptionsSetup: function(initOptions){
+            this.language = $.BriskDataTable.languages[initOptions.language];
+            this.datatable = initOptions.datatable;
+            this.filters = initOptions.filters;
+            this.filters.initialized = false;
+            this.datatable.current_page = 1;
+        },
+
+        initialImplementations: function(){
+            if(this.datatable.refresh.enable){
+                this.datatable.buttons.unshift({
+                    data_action: "refresh",
+                    classes: {
+                        button: "btn btn-xs btn-warning",
+                        icon: "fa fa-sync"
+                    },
+                    title: this.language.buttons.refresh
+                });
+            }
+
+            /**
+             * START:: Overridden Methods Setup
+             */
+            if(typeof this.datatable.row_format == "function"){
+                this.row_format = this.datatable.row_format;
+            }
+
+            if(typeof this.datatable.row_reformat == "function"){
+                this.row_reformat = this.datatable.row_reformat;
+            }
+            //END:: Overridden Methods Setup
+        },
+
         InitBrisk: function () {
             /**
              * START:: HTML Templates Appending
