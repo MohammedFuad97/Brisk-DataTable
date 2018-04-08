@@ -1,6 +1,8 @@
 # Brisk DataTable
 Brisk works on making the process of producing datatables easier and faster by keeping the hard usually repeated stuff on Brisk and focusing on building your special tables without giving any care about the small trivial issues if they were clearly constrained or not.
 
+<img src='https://lh6.googleusercontent.com/R5bztmmlpqoOiWeF6G7TXABnI3V0895tblI-0ZP6UWg5O-LUbnRCD9fzEF4_laXK4jrRgweC3I7sIjkTx2XT=w1920-h959-rw' />
+
 <h1>Requested Backend JSON Format:</h1>
 <label>Used to control frontend</label>
 <blockquote>Coming versions will work on enabling the control of all frontend attributes from backend side.</blockquote>
