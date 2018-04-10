@@ -235,3 +235,46 @@ You can access any event of the injected buttons to the table using this format,
             }
         }
     }
+
+# Attributes Reference (still under preparing) 
+## General Object
+| Attribute        | Default           | Options  |
+| ------------- |:-------------:|:-------------:|
+| language      | ar | ['ar', 'en'] |
+| direction      | language direction      |   ['rtl', 'ltr'] |
+
+## Filters Object
+| Attribute        | Default           | Options  |
+| ------------- |:-------------:|:-------------:|
+| title | depends on the language      |    Any Text is Fine |
+| classes |       |      |
+| enable |       |      |
+| active |       |      |
+
+## Datatable Object
+| Attribute        | Default           | Options  |
+| ------------- |:-------------:|:-------------:|
+| title | depends on the language      |    Any Text is Fine |
+| resource.base_url |       |      |
+| resource.entity |       |      |
+| resource.datatable |       |      |
+| classes |       |      |
+| buttons[].title |       |      |
+| buttons[].data_action |       |      |
+| buttons[].classes.button |       |      |
+| buttons[].classes.icon |       |      |
+| refresh.enable |       |      |
+| refresh.clear |       |      |
+| refresh.auto.active |       |      |
+| refresh.auto.unit |       |      |
+| refresh.auto.duration |       |      |
+| order_by.column |       |      |
+| order_by.method |       |      |
+| execution_time |       |      |
+| tbody.height |       |      
+
+### Datatable Methods Override
+| Method        | Default           | Options  |
+| ------------- |:-------------:|:-------------:|
+| rows_reformat |       |      |
+| row_reformat |       |      |
