@@ -1,6 +1,7 @@
 $(function() {
     var initOptions = {
         language: 'en', //avaliable languages are ['ar', 'en'], default language is 'ar'
+        direction: "rtl", //['rtl', 'ltr'] and the default is table language direction
         filters: {
             title: "Filtering Tools", //Comes from backend JSON by default, and you can override it here
             classes: [],

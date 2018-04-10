@@ -16,6 +16,19 @@
         }
         //END
 
+        //START:: Direction Attribute
+        var language_direction = $.BriskDataTable.languages[initOptions.language].direction;
+        if(initOptions.direction === undefined){
+            initOptions.direction = language_direction;
+        }else if(initOptions.direction !== language_direction){
+            if(language_direction == "rtl"){
+                initOptions.direction = "ltr";
+            }else{
+                initOptions.direction = "rtl";
+            }
+        }
+        //END
+
         //START:: Filters Attributes
         if(initOptions.filters === undefined){
             initOptions.filters = {
@@ -85,6 +98,7 @@
     $.BriskDataTable.languages = {
         ar: {
             code: "ar",
+            direction: "rtl",
             filters: {
                 title: "أدوات البحث"
             },
@@ -113,6 +127,7 @@
         },
         en: {
             code: "en",
+            direction: "ltr",
             filters: {
                 title: "Filtering Tools"
             },
@@ -144,6 +159,7 @@
     $.BriskDataTable.prototype = {
         initialOptionsSetup: function(initOptions){
             this.language = $.BriskDataTable.languages[initOptions.language];
+            this.direction = initOptions.direction;
             this.datatable = initOptions.datatable;
             this.filters = initOptions.filters;
             this.filters.initialized = false;
@@ -183,7 +199,7 @@
 
             var filters_template_html = '';
             var datatable_template_html = '';
-            
+
             if(this.filters.enable){
                 /**
                  * START:: Filters template
@@ -204,7 +220,7 @@
 
                 var $filters_template = $('<div />', {html: filters_template_html});
 
-                if(this.language.code === "ar"){
+                if(this.direction === "rtl"){
                     $filters_template.find('.panel.brisk-filters').addClass('rtl');
                 }
 
@@ -245,7 +261,7 @@
 
             var $datatable_template = $('<div />', {html: datatable_template_html});
 
-            if(this.language.code === "ar"){
+            if(this.direction === "rtl"){
                 $datatable_template.find('.panel.brisk-datatable').addClass('rtl');
             }
 
@@ -263,7 +279,6 @@
 
             //Inject Template HTML
             this.element.append($datatable_template.html());
-
             //END:: HTML Templates Appending
             
             var briskDataTable = this;
