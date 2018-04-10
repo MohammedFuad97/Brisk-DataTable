@@ -185,6 +185,9 @@
         initialImplementations: function(){
             var briskDataTable = this;
 
+            /**
+             * START:: Refresh Methods Setup
+             */
             if(this.datatable.refresh.enable){
                 this.datatable.buttons.unshift({
                     data_action: "refresh",
@@ -207,9 +210,9 @@
 
                 setInterval(function(){
                     briskDataTable.get();
-                    console.log('refersh-----------');
                 }, interval);
             }
+            //END:: Refresh Methods Setup
 
             /**
              * START:: Overridden Methods Setup
