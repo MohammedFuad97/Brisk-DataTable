@@ -214,7 +214,7 @@ You can access any event of the injected buttons to the table using this format,
 | Attribute        | Default           | Options  | Notes |
 | ------------- |:-------------:|:-------------:|:-------------:|
 | title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or You can override it here
-| classes |   []    |      | allows you to injects css classes to filters panel
+| classes |   [ ]    |      | allows you to injects css classes to filters panel
 | enable |     false  |  [true, false]    | show/hide filters panel
 | active |  false     |   [true, false]   | activate/deactivate filters directly once table loaded
 
@@ -225,7 +225,7 @@ You can access any event of the injected buttons to the table using this format,
 | resource.base_url |       |      |
 | resource.entity |       |      |
 | resource.datatable |       |      |
-| classes |    []   |      |allows you to injects css classes to datatable panel
+| classes |    [ ]   |      |allows you to injects css classes to datatable panel
 | buttons[].title |       |      |
 | buttons[].data_action |       |      |
 | buttons[].classes.button |       |      |
@@ -238,7 +238,7 @@ You can access any event of the injected buttons to the table using this format,
 | order_by.column |       |      | column of first data GET call sort
 | order_by.method |       |      | method of first data GET call sort
 | execution_time |     true  |  [true, false]    | shows execution time in table footer
-| tbody.height |   60vh    |      | table body height
+| tbody.height |   '60vh'    |      | table body height
 
 ### Datatable Methods Override
 | Method        | Default           | Options  |
