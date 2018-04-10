@@ -248,8 +248,8 @@ You can access any event of the injected buttons to the table using this format,
 | ------------- |:-------------:|:-------------:|:-------------:|
 | title | depends on the language      |    Any Text is Fine |
 | classes |       |      |
-| enable |       |      | show/hide filters panel
-| active |       |      | activate/deactivate filters directly once table loaded
+| enable |     false  |  [true, false]    | show/hide filters panel
+| active |  false     |   [true, false]   | activate/deactivate filters directly once table loaded
 
 ## Datatable Object
 | Attribute        | Default           | Options  | Notes |
@@ -263,15 +263,15 @@ You can access any event of the injected buttons to the table using this format,
 | buttons[].data_action |       |      |
 | buttons[].classes.button |       |      |
 | buttons[].classes.icon |       |      |
-| refresh.enable |       |      |
-| refresh.clear |       |      |
-| refresh.auto.active |       |      |
-| refresh.auto.unit |       |      |
-| refresh.auto.duration |       |      |
+| refresh.enable |  true     |    [true, false]  |
+| refresh.clear |  false     |   [true, false]   |
+| refresh.auto.active |  false     |   [true, false]   |
+| refresh.auto.unit |     'seconds'  |    ['seconds', 'minutes']  |
+| refresh.auto.duration |     1  |      |
 | order_by.column |       |      |
 | order_by.method |       |      |
-| execution_time |       |      |
-| tbody.height |       |      
+| execution_time |     true  |  [true, false]    | shows execution time in table footer
+| tbody.height |   60vh    |      | table body height
 
 ### Datatable Methods Override
 | Method        | Default           | Options  |
