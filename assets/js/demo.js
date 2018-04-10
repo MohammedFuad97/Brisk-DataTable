@@ -28,7 +28,12 @@ $(function() {
             ],
             refresh: {
                 enable: true, //to show/hide refresh button. The defualt is true.
-                clear: false //to clear table results when refresh. The defualt is false. 
+                clear: false, //to clear table results when refresh. The defualt is false. 
+                auto: {
+                    active: true, //default is false
+                    unit: 'seconds', //['seconds' (default), 'minutes']
+                    duration: 5 //default is 1
+                }
             },
             order_by: {
                 column: 'serial_no', //column of first GET call sort

@@ -70,7 +70,10 @@
         if(initOptions.datatable.refresh == undefined){
             initOptions.datatable.refresh = {
                 enable: true,
-                clear: false
+                clear: false,
+                auto: {
+                    active: false
+                }
             };
         }
         if(initOptions.datatable.refresh.enable == undefined){
@@ -78,6 +81,19 @@
         }
         if(initOptions.datatable.refresh.clear == undefined){
             initOptions.datatable.refresh.clear = false;
+        }
+        if(initOptions.datatable.refresh.auto == undefined){
+            initOptions.datatable.refresh.auto = {
+                active: false
+            };
+        }
+        if(initOptions.datatable.refresh.auto.active){
+            if(initOptions.datatable.refresh.auto.unit === undefined){
+                initOptions.datatable.refresh.auto.unit = 'seconds';
+            }
+            if(initOptions.datatable.refresh.auto.duration === undefined){
+                initOptions.datatable.refresh.auto.duration = 1;
+            }
         }
         if(initOptions.datatable.execution_time == undefined){
             initOptions.datatable.execution_time = true;
@@ -167,6 +183,8 @@
         },
 
         initialImplementations: function(){
+            var briskDataTable = this;
+
             if(this.datatable.refresh.enable){
                 this.datatable.buttons.unshift({
                     data_action: "refresh",
@@ -176,6 +194,21 @@
                     },
                     title: this.language.buttons.refresh
                 });
+            }
+
+            if(this.datatable.refresh.auto.active){
+                var interval;
+
+                if(this.datatable.refresh.auto.unit == "seconds"){
+                    interval = this.datatable.refresh.auto.duration * 1000;
+                }else if(this.datatable.refresh.auto.unit == "minutes"){
+                    interval = this.datatable.refresh.auto.duration * 1000 * 60;
+                }
+
+                setInterval(function(){
+                    briskDataTable.get();
+                    console.log('refersh-----------');
+                }, interval);
             }
 
             /**
