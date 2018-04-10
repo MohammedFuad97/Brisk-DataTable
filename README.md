@@ -109,7 +109,7 @@ Brisk works on making the process of producing datatables easier and faster by k
         language: 'en',
         filters: {
             title: "Filtering Tools",
-            enable: true
+            enable: true,
             active: true
         },
         datatable: {
@@ -213,19 +213,19 @@ You can access any event of the injected buttons to the table using this format,
 ## Filters Object
 | Attribute        | Default           | Options  | Notes |
 | ------------- |:-------------:|:-------------:|:-------------:|
-| title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or you can override it here
-| classes |       |      |
+| title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or You can override it here
+| classes |   []    |      | allows you to injects css classes to filters panel
 | enable |     false  |  [true, false]    | show/hide filters panel
 | active |  false     |   [true, false]   | activate/deactivate filters directly once table loaded
 
 ## Datatable Object
 | Attribute        | Default           | Options  | Notes |
 | ------------- |:-------------:|:-------------:|:-------------:|
-| title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or you can override it here
+| title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or You can override it here
 | resource.base_url |       |      |
 | resource.entity |       |      |
 | resource.datatable |       |      |
-| classes |       |      |
+| classes |    []   |      |allows you to injects css classes to datatable panel
 | buttons[].title |       |      |
 | buttons[].data_action |       |      |
 | buttons[].classes.button |       |      |
