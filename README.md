@@ -244,16 +244,16 @@ You can access any event of the injected buttons to the table using this format,
 | direction      | language direction      |   ['rtl', 'ltr'] |
 
 ## Filters Object
-| Attribute        | Default           | Options  |
-| ------------- |:-------------:|:-------------:|
+| Attribute        | Default           | Options  | Notes |
+| ------------- |:-------------:|:-------------:|:-------------:|
 | title | depends on the language      |    Any Text is Fine |
 | classes |       |      |
-| enable |       |      |
-| active |       |      |
+| enable |       |      | show/hide filters panel
+| active |       |      | activate/deactivate filters directly once table loaded
 
 ## Datatable Object
-| Attribute        | Default           | Options  |
-| ------------- |:-------------:|:-------------:|
+| Attribute        | Default           | Options  | Notes |
+| ------------- |:-------------:|:-------------:|:-------------:|
 | title | depends on the language      |    Any Text is Fine |
 | resource.base_url |       |      |
 | resource.entity |       |      |
