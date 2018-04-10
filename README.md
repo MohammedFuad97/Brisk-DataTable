@@ -106,14 +106,14 @@ Brisk works on making the process of producing datatables easier and faster by k
 <strong>2. Brisk Instance Options declaration:</strong>
 
     var initOptions = {
-        language: 'en', //avaliable languages are ['ar', 'en'], default language is 'ar'
+        language: 'en',
         filters: {
-            title: "Filtering Tools", //Comes from backend JSON by default, and you can override it here
-            enable: true, //to show filters panel
-            active: true, //to set filters as Active direct once table loaded
+            title: "Filtering Tools",
+            enable: true
+            active: true
         },
         datatable: {
-            title: "Brisk DataTable Demo", //Comes from backend JSON by default, and you can override it here
+            title: "Brisk DataTable Demo",
             resource: {
                 base_url: 'http://domain-name.com',
                 entity: '/resource',
@@ -130,8 +130,8 @@ Brisk works on making the process of producing datatables easier and faster by k
                 }
             ],
             order_by: {
-                column: 'serial_no', //column of first GET call sort
-                method: 'DESC' //method of first GET call sort
+                column: 'serial_no',
+                method: 'DESC'
             }
         }
     };
@@ -213,7 +213,7 @@ You can access any event of the injected buttons to the table using this format,
 ## Filters Object
 | Attribute        | Default           | Options  | Notes |
 | ------------- |:-------------:|:-------------:|:-------------:|
-| title | depends on the language      |    Any Text is Fine |
+| title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or you can override it here
 | classes |       |      |
 | enable |     false  |  [true, false]    | show/hide filters panel
 | active |  false     |   [true, false]   | activate/deactivate filters directly once table loaded
@@ -221,7 +221,7 @@ You can access any event of the injected buttons to the table using this format,
 ## Datatable Object
 | Attribute        | Default           | Options  | Notes |
 | ------------- |:-------------:|:-------------:|:-------------:|
-| title | depends on the language      |    Any Text is Fine |
+| title | depends on the language      |    Any Text is Fine | Comes from backend JSON or Brisk default language titles or you can override it here
 | resource.base_url |       |      |
 | resource.entity |       |      |
 | resource.datatable |       |      |
@@ -235,8 +235,8 @@ You can access any event of the injected buttons to the table using this format,
 | refresh.auto.active |  false     |   [true, false]   |
 | refresh.auto.unit |     'seconds'  |    ['seconds', 'minutes']  |
 | refresh.auto.duration |     1  |      |
-| order_by.column |       |      |
-| order_by.method |       |      |
+| order_by.column |       |      | column of first data GET call sort
+| order_by.method |       |      | method of first data GET call sort
 | execution_time |     true  |  [true, false]    | shows execution time in table footer
 | tbody.height |   60vh    |      | table body height
 
