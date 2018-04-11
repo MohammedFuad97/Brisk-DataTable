@@ -105,7 +105,7 @@ Brisk works on making the process of producing datatables easier and faster by k
     
 <strong>2. Brisk Instance Options declaration:</strong>
 
-You can check the full list of attributes in [Attributes Reference](#attributes-reference-still-under-preparing)
+You can check the full list of attributes in [Attributes Reference](#attributes-reference-still-under-preparing).
 
     var initOptions = {
         language: 'en',
