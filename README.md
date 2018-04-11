@@ -97,13 +97,13 @@ Brisk works on making the process of producing datatables easier and faster by k
        "total":726
     }
 
-<h1>Frontend Part:</h1>
+# Frontend Part:
 
-<strong>1. You need to declare very simple \<div> and give it any ID you want, in our demo:</strong>
+### 1. You need to declare very simple \<div> and give it any ID you want, in our demo:
     
     <div id="brisk-demo"></div>
     
-<strong>2. Brisk Instance Options declaration:</strong>
+### 2. Brisk Instance Options declaration:
 
 You can check the full list of attributes in [Attributes Reference](#attributes-reference-still-under-preparing).
 
@@ -138,14 +138,14 @@ You can check the full list of attributes in [Attributes Reference](#attributes-
         }
     };
 
-<strong>3. Brisk Instance declaration:</strong>
+### 3. Brisk Instance declaration:
 
     var briskDemo = new $.BriskDataTable($("#brisk-demo"), initOptions);
     
     briskDemo.InitBrisk(); //initilaize the table and its filters HTML
     briskDemo.get(); //gets table data, and filters
     
-<strong>4. Reach Brisk table buttons:</strong>
+### 4. Reach Brisk table buttons:
 
 You can access any event of the injected buttons to the table using this format, by [data_action] which you already declared in the options:
 
@@ -153,7 +153,7 @@ You can access any event of the injected buttons to the table using this format,
         alert();
     });
     
-<strong>In case you are going to enable Filters, you need to declare this GLOBALS over your entire app before step #2:</strong>
+### In case you are going to enable Filters, you need to declare this GLOBALS over your entire app before step #2:
 
     const GLOBALS = {
         base_url: 'http://domain-name.com',
