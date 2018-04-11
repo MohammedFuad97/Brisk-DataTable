@@ -1,5 +1,5 @@
 # Brisk DataTable
-Brisk works on making the process of producing datatables easier and faster by keeping the hard usually repeated stuff on Brisk and focusing on building your special tables without giving any care about the small trivial issues if they were clearly constrained or not.
+Brisk works on making the process of producing datatables easier and faster by keeping the hard usually repeated stuff on Brisk and focusing on building your special tables without giving a lot of care about the small trivial issues if they were clearly constrained or not.
  
 ![Brisk DataTable Workflow Chart](https://github.com/MohammedFuad97/Brisk-DataTable/blob/master/Brisk%20Datatable%20Workflow%20Chart.jpg)
 
