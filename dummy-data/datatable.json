@@ -1,1 +1,469 @@
-{"filters_title":"\u0623\u062f\u0648\u0627\u062a \u0627\u0644\u0628\u062d\u062b","filters":[{"title":"\u0627\u0644\u0647\u062f\u0641:","type":"select","name":"type_serial_no","classes":[],"data":{"options_source":"treatment_types","has_empty":false,"has_all":true,"has_none":false}},{"title":"\u0627\u0633\u0645 \u0627\u0644\u0645\u062a\u0635\u0644:","type":"input","name":"full_name","placeholder":"\u0627\u0633\u0645 \u0627\u0644\u0632\u0627\u0626\u0631...","classes":[]},{"title":"\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629:","type":"select","name":"zone_serial_no","classes":[],"data":{"options_source":"zones","has_empty":false,"has_all":true,"has_none":false}},{"title":"\u0645\u0646:","type":"input","name":"from_date","placeholder":"","classes":[],"date":true},{"title":"\u0625\u0644\u0649:","type":"input","name":"to_date","placeholder":"","classes":[],"date":true}],"table_title":"\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a","columns":[{"title":"\u0627\u0644\u0647\u062f\u0641","sortable":true,"column":"type_title"},{"title":"\u0627\u0644\u0627\u0633\u0645","sortable":true,"column":"full_name"},{"title":"\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629","sortable":true,"column":"zone_title"},{"title":"\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0627\u062a\u0635\u0627\u0644","sortable":true,"column":"record_date","numeric":true},{"title":"\u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0625\u0644\u0649 \u0642\u0633\u0645","sortable":true,"column":"redirect_to_sector_title"},{"title":"\u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0625\u0644\u0649 \u0645\u0648\u0638\u0641","sortable":true,"column":"redirect_to_employee_name"}],"footer":{"info":" \u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0628\u0627\u0644\u063a \u0627\u0644\u0645\u0636\u0627\u0641\u0629 \u063a\u064a\u0631 \u0645\u0643\u0627\u0641\u0626 \u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0629.","execution_time":"0.0112"},"current_page":1,"data":[{"serial_no":11193,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0645\u0646\u0645\u0646\u0645\u0646 ","zone_title":null,"record_date":"2018-02-06 20:35:16","redirect_to_sector_title":"\u0627\u0644\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627","redirect_to_employee_name":"\u062f\u0639\u0627\u0621 \u0639\u0641\u0627\u0646\u0629","invoke_by_username":null,"person_serial_no":4470,"supplier":0},{"serial_no":11192,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0628\u0644\u0628\u064a\u0644 ","zone_title":null,"record_date":"2018-02-06 20:34:53","redirect_to_sector_title":"\u0627\u0644\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627","redirect_to_employee_name":"\u064a\u0627\u0641\u0627","invoke_by_username":null,"person_serial_no":4469,"supplier":0},{"serial_no":11191,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0645\u062d\u0645\u062f \u0627\u0644\u0639\u0627\u0645\u0648\u062f\u064a ","zone_title":"\u063a\u0632\u0629","record_date":"2018-02-06 20:34:28","redirect_to_sector_title":"\u0627\u0644\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627","redirect_to_employee_name":"\u0639\u0644\u0627\u0621 \u0639\u0641\u0627\u0646\u0629 ( \u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627)","invoke_by_username":null,"person_serial_no":219,"supplier":0},{"serial_no":11190,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0645\u062d\u0645\u062f \u0641\u0624\u0627\u062f \u0645\u062d\u0645\u062f \u0639\u0648\u062f\u0647","zone_title":null,"record_date":"2018-02-06 20:33:01","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4468,"supplier":0},{"serial_no":11173,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u062d\u0627\u0645\u062f \u0634\u0627\u0647\u064a\u0646 ","zone_title":"\u062e\u0627\u0646\u064a\u0648\u0646\u0633","record_date":"2018-01-17 21:46:52","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4461,"supplier":0},{"serial_no":11171,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0645\u062d\u0645\u062f \u0632\u064a\u0627\u062f \u0645\u0637\u0631 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-17 21:39:51","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4459,"supplier":0},{"serial_no":11161,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0627\u062d\u0645\u062f \u0646\u0628\u064a\u0644 \u0646\u0635\u0627\u0631 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-17 20:44:48","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4454,"supplier":0},{"serial_no":11142,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0628\u0643\u0631 \u0623\u062d\u0645\u062f \u062d\u0633\u064a\u0646 \u0646\u0648\u0627\u0633 ","zone_title":"\u0627\u0644\u0648\u0633\u0637\u0649","record_date":"2018-01-17 19:24:36","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4271,"supplier":0},{"serial_no":11122,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0639\u0645\u0631 \u0645\u0633\u0639\u0648\u062f ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-17 17:31:39","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4444,"supplier":0},{"serial_no":11120,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0639\u0627\u062f\u0644 \u0627\u0628\u0648 \u0644\u0628\u062f\u0629 ","zone_title":"\u062e\u0627\u0646\u064a\u0648\u0646\u0633","record_date":"2018-01-17 17:23:06","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4443,"supplier":0},{"serial_no":11099,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0627\u064a\u0647\u0627\u0628 \u0627\u0628\u0648 \u0634\u0627\u0648\u064a\u0634 ","zone_title":"\u0627\u0644\u0648\u0633\u0637\u0649","record_date":"2018-01-16 21:21:40","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4432,"supplier":0},{"serial_no":11077,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0631\u0627\u0626\u062f \u0627\u0644\u0628\u0631\u0627\u0648\u064a ","zone_title":"\u0627\u0644\u0634\u0645\u0627\u0644","record_date":"2018-01-16 19:02:22","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4428,"supplier":0},{"serial_no":11052,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0639\u0645\u0631\u0627\u0646 \u0633\u0644\u0627\u0645\u0647 \u0634\u0639\u0628\u0627\u0646 \u0627\u0644\u0645\u0634\u0647\u0631\u0627\u0648\u064a ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-16 17:18:59","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":3927,"supplier":0},{"serial_no":10991,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0627\u0646\u0648\u0631 \u0633\u0644\u0627\u0645\u0629 \u0639\u0628\u062f \u0627\u0644\u0639\u0627\u0644 ","zone_title":null,"record_date":"2018-01-15 19:08:33","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4414,"supplier":0},{"serial_no":10985,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0639\u0632 \u0627\u0644\u062f\u064a\u0646 \u062d\u0632\u064a\u0642 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-15 18:24:12","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4410,"supplier":0},{"serial_no":10978,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0628\u0644\u0627\u0644 \u0639\u0637\u0627\u0627\u0644\u0644\u0647 \u0634\u0641\u064a\u0642 \u0627\u0628\u0648 \u0632\u0648\u0631 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-15 18:04:54","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":3454,"supplier":0},{"serial_no":10963,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0631\u0627\u0645\u064a \u0647\u0627\u0631\u0648\u0646 ","zone_title":null,"record_date":"2018-01-14 22:48:31","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4405,"supplier":0},{"serial_no":10961,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u064a\u0648\u0633\u0641 \u0627\u0628\u0648 \u0631\u062d\u0645\u0629 ","zone_title":null,"record_date":"2018-01-14 22:47:14","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4404,"supplier":0},{"serial_no":10907,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0639\u0628\u062f \u0627\u0644\u0644\u0637\u064a\u0641 \u0627\u0628\u0648 \u0633\u0639\u064a\u062f ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-14 18:04:49","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4388,"supplier":0},{"serial_no":10905,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0645\u062d\u0645\u062f \u0627\u0644\u0633\u064a\u062f ","zone_title":null,"record_date":"2018-01-14 17:48:02","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4390,"supplier":0},{"serial_no":10900,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0645\u062d\u0645\u0648\u062f \u062d\u0633\u0646 \u0631\u0645\u0636\u0627\u0646 \u062e\u0636\u0631 ","zone_title":"\u0627\u0644\u0634\u0645\u0627\u0644","record_date":"2018-01-14 17:14:42","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4302,"supplier":0},{"serial_no":10868,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0639\u0628\u062f \u0627\u0644\u0644\u0637\u064a\u0641 \u0627\u0628\u0648 \u0633\u0639\u064a\u062f ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-13 20:26:59","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4388,"supplier":0},{"serial_no":10863,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0643\u0631\u0645 \u0628\u0634\u064a\u0631 \u0627\u062d\u0645\u062f \u0627\u0628\u0648 \u0646\u062d\u0644 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-13 20:06:54","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":2930,"supplier":0},{"serial_no":10828,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0635\u0627\u0644\u062d \u0627\u0628\u0648 \u0634\u0646\u0628 ","zone_title":"\u0627\u0644\u0648\u0633\u0637\u0649","record_date":"2018-01-13 18:09:40","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4379,"supplier":0},{"serial_no":10827,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0645\u062d\u0645\u062f \u0639\u0644\u0627\u0621 \u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0633\u0643\u064a\u0643 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-13 18:05:55","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":2827,"supplier":0},{"serial_no":10795,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0645\u0646\u0627\u0644 \u0627\u0644\u0645\u0634\u0647\u0631\u0627\u0648\u064a ","zone_title":null,"record_date":"2018-01-11 20:31:42","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4376,"supplier":0},{"serial_no":10753,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0641\u0631\u062c \u0639\u0628\u062f\u0647 ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-11 17:52:33","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4369,"supplier":0},{"serial_no":10734,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u062d\u0627\u0645\u062f \u062d\u0646\u064a\u0641 ","zone_title":null,"record_date":"2018-01-10 21:52:39","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4366,"supplier":0},{"serial_no":10713,"type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f","full_name":"\u0639\u0627\u0645\u0631 \u0627\u0633\u0639\u062f \u0633\u0639\u062f ","zone_title":null,"record_date":"2018-01-10 20:42:43","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":4365,"supplier":0},{"serial_no":10698,"type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f","full_name":"\u0634\u0627\u062f\u064a \u0639\u0635\u0627\u0645 \u0641\u0647\u0645\u064a \u0648\u0634\u0627\u062d ","zone_title":"\u063a\u0632\u0629","record_date":"2018-01-10 19:53:36","redirect_to_sector_title":null,"redirect_to_employee_name":null,"invoke_by_username":null,"person_serial_no":346,"supplier":0}],"from":1,"last_page":25,"next_page_url":"http:\/\/localhost\/ACCORD\/calls\/datatable?page=2","path":"http:\/\/localhost\/ACCORD\/calls\/datatable","per_page":30,"prev_page_url":null,"to":30,"total":726}
+{
+    "filters_title":"\u0623\u062f\u0648\u0627\u062a \u0627\u0644\u0628\u062d\u062b",
+    "filters":[
+       {
+          "title":"\u0627\u0644\u0647\u062f\u0641:",
+          "type":"select",
+          "name":"type_serial_no",
+          "classes":[
+ 
+          ],
+          "data":{
+             "options_source":"treatment_types",
+             "has_empty":false,
+             "has_all":true,
+             "has_none":false
+          }
+       },
+       {
+          "title":"\u0627\u0633\u0645 \u0627\u0644\u0645\u062a\u0635\u0644:",
+          "type":"input",
+          "name":"full_name",
+          "placeholder":"\u0627\u0633\u0645 \u0627\u0644\u0632\u0627\u0626\u0631...",
+          "classes":[
+ 
+          ]
+       },
+       {
+          "title":"\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629:",
+          "type":"select",
+          "name":"zone_serial_no",
+          "classes":[
+ 
+          ],
+          "data":{
+             "options_source":"zones",
+             "has_empty":false,
+             "has_all":true,
+             "has_none":false
+          }
+       },
+       {
+          "title":"\u0645\u0646:",
+          "type":"input",
+          "name":"from_date",
+          "placeholder":"",
+          "classes":[
+ 
+          ],
+          "date":true
+       },
+       {
+          "title":"\u0625\u0644\u0649:",
+          "type":"input",
+          "name":"to_date",
+          "placeholder":"",
+          "classes":[
+ 
+          ],
+          "date":true
+       }
+    ],
+    "table_title":"\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a",
+    "columns":[
+       {
+          "title":"\u0627\u0644\u0647\u062f\u0641",
+          "sortable":true,
+          "column":"type_title"
+       },
+       {
+          "title":"\u0627\u0644\u0627\u0633\u0645",
+          "sortable":true,
+          "column":"full_name"
+       },
+       {
+          "title":"\u0627\u0644\u0645\u062d\u0627\u0641\u0638\u0629",
+          "sortable":true,
+          "column":"zone_title"
+       },
+       {
+          "title":"\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0627\u062a\u0635\u0627\u0644",
+          "sortable":true,
+          "column":"record_date",
+          "numeric":true
+       },
+       {
+          "title":"\u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0625\u0644\u0649 \u0642\u0633\u0645",
+          "sortable":true,
+          "column":"redirect_to_sector_title"
+       },
+       {
+          "title":"\u0627\u0644\u062a\u062d\u0648\u064a\u0644 \u0625\u0644\u0649 \u0645\u0648\u0638\u0641",
+          "sortable":true,
+          "column":"redirect_to_employee_name"
+       }
+    ],
+    "footer":{
+       "info":" \u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0628\u0627\u0644\u063a \u0627\u0644\u0645\u0636\u0627\u0641\u0629 \u063a\u064a\u0631 \u0645\u0643\u0627\u0641\u0626 \u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0629.",
+       "execution_time":"0.0112"
+    },
+    "current_page":1,
+    "data":[
+       {
+          "serial_no":11193,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0645\u0646\u0645\u0646\u0645\u0646 ",
+          "zone_title":null,
+          "record_date":"2018-02-06 20:35:16",
+          "redirect_to_sector_title":"\u0627\u0644\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627",
+          "redirect_to_employee_name":"محمد حسن علي",
+          "invoke_by_username":null,
+          "person_serial_no":4470,
+          "supplier":0
+       },
+       {
+          "serial_no":11192,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0628\u0644\u0628\u064a\u0644 ",
+          "zone_title":null,
+          "record_date":"2018-02-06 20:34:53",
+          "redirect_to_sector_title":"\u0627\u0644\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627",
+          "redirect_to_employee_name":"علاء محسن خليل",
+          "invoke_by_username":null,
+          "person_serial_no":4469,
+          "supplier":0
+       },
+       {
+          "serial_no":11191,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0645\u062d\u0645\u062f \u0627\u0644\u0639\u0627\u0645\u0648\u062f\u064a ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-02-06 20:34:28",
+          "redirect_to_sector_title":"\u0627\u0644\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0627",
+          "redirect_to_employee_name":"منذر أنور أمير",
+          "invoke_by_username":null,
+          "person_serial_no":219,
+          "supplier":0
+       },
+       {
+          "serial_no":11190,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0645\u062d\u0645\u062f \u0641\u0624\u0627\u062f \u0645\u062d\u0645\u062f \u0639\u0648\u062f\u0647",
+          "zone_title":null,
+          "record_date":"2018-02-06 20:33:01",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4468,
+          "supplier":0
+       },
+       {
+          "serial_no":11173,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u062d\u0627\u0645\u062f \u0634\u0627\u0647\u064a\u0646 ",
+          "zone_title":"\u062e\u0627\u0646\u064a\u0648\u0646\u0633",
+          "record_date":"2018-01-17 21:46:52",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4461,
+          "supplier":0
+       },
+       {
+          "serial_no":11171,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0645\u062d\u0645\u062f \u0632\u064a\u0627\u062f \u0645\u0637\u0631 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-17 21:39:51",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4459,
+          "supplier":0
+       },
+       {
+          "serial_no":11161,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0627\u062d\u0645\u062f \u0646\u0628\u064a\u0644 \u0646\u0635\u0627\u0631 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-17 20:44:48",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4454,
+          "supplier":0
+       },
+       {
+          "serial_no":11142,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0628\u0643\u0631 \u0623\u062d\u0645\u062f \u062d\u0633\u064a\u0646 \u0646\u0648\u0627\u0633 ",
+          "zone_title":"\u0627\u0644\u0648\u0633\u0637\u0649",
+          "record_date":"2018-01-17 19:24:36",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4271,
+          "supplier":0
+       },
+       {
+          "serial_no":11122,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0639\u0645\u0631 \u0645\u0633\u0639\u0648\u062f ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-17 17:31:39",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4444,
+          "supplier":0
+       },
+       {
+          "serial_no":11120,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0639\u0627\u062f\u0644 \u0627\u0628\u0648 \u0644\u0628\u062f\u0629 ",
+          "zone_title":"\u062e\u0627\u0646\u064a\u0648\u0646\u0633",
+          "record_date":"2018-01-17 17:23:06",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4443,
+          "supplier":0
+       },
+       {
+          "serial_no":11099,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0627\u064a\u0647\u0627\u0628 \u0627\u0628\u0648 \u0634\u0627\u0648\u064a\u0634 ",
+          "zone_title":"\u0627\u0644\u0648\u0633\u0637\u0649",
+          "record_date":"2018-01-16 21:21:40",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4432,
+          "supplier":0
+       },
+       {
+          "serial_no":11077,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0631\u0627\u0626\u062f \u0627\u0644\u0628\u0631\u0627\u0648\u064a ",
+          "zone_title":"\u0627\u0644\u0634\u0645\u0627\u0644",
+          "record_date":"2018-01-16 19:02:22",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4428,
+          "supplier":0
+       },
+       {
+          "serial_no":11052,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0639\u0645\u0631\u0627\u0646 \u0633\u0644\u0627\u0645\u0647 \u0634\u0639\u0628\u0627\u0646 \u0627\u0644\u0645\u0634\u0647\u0631\u0627\u0648\u064a ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-16 17:18:59",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":3927,
+          "supplier":0
+       },
+       {
+          "serial_no":10991,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0627\u0646\u0648\u0631 \u0633\u0644\u0627\u0645\u0629 \u0639\u0628\u062f \u0627\u0644\u0639\u0627\u0644 ",
+          "zone_title":null,
+          "record_date":"2018-01-15 19:08:33",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4414,
+          "supplier":0
+       },
+       {
+          "serial_no":10985,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0639\u0632 \u0627\u0644\u062f\u064a\u0646 \u062d\u0632\u064a\u0642 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-15 18:24:12",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4410,
+          "supplier":0
+       },
+       {
+          "serial_no":10978,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0628\u0644\u0627\u0644 \u0639\u0637\u0627\u0627\u0644\u0644\u0647 \u0634\u0641\u064a\u0642 \u0627\u0628\u0648 \u0632\u0648\u0631 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-15 18:04:54",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":3454,
+          "supplier":0
+       },
+       {
+          "serial_no":10963,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0631\u0627\u0645\u064a \u0647\u0627\u0631\u0648\u0646 ",
+          "zone_title":null,
+          "record_date":"2018-01-14 22:48:31",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4405,
+          "supplier":0
+       },
+       {
+          "serial_no":10961,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u064a\u0648\u0633\u0641 \u0627\u0628\u0648 \u0631\u062d\u0645\u0629 ",
+          "zone_title":null,
+          "record_date":"2018-01-14 22:47:14",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4404,
+          "supplier":0
+       },
+       {
+          "serial_no":10907,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0639\u0628\u062f \u0627\u0644\u0644\u0637\u064a\u0641 \u0627\u0628\u0648 \u0633\u0639\u064a\u062f ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-14 18:04:49",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4388,
+          "supplier":0
+       },
+       {
+          "serial_no":10905,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0645\u062d\u0645\u062f \u0627\u0644\u0633\u064a\u062f ",
+          "zone_title":null,
+          "record_date":"2018-01-14 17:48:02",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4390,
+          "supplier":0
+       },
+       {
+          "serial_no":10900,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0645\u062d\u0645\u0648\u062f \u062d\u0633\u0646 \u0631\u0645\u0636\u0627\u0646 \u062e\u0636\u0631 ",
+          "zone_title":"\u0627\u0644\u0634\u0645\u0627\u0644",
+          "record_date":"2018-01-14 17:14:42",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4302,
+          "supplier":0
+       },
+       {
+          "serial_no":10868,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0639\u0628\u062f \u0627\u0644\u0644\u0637\u064a\u0641 \u0627\u0628\u0648 \u0633\u0639\u064a\u062f ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-13 20:26:59",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4388,
+          "supplier":0
+       },
+       {
+          "serial_no":10863,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0643\u0631\u0645 \u0628\u0634\u064a\u0631 \u0627\u062d\u0645\u062f \u0627\u0628\u0648 \u0646\u062d\u0644 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-13 20:06:54",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":2930,
+          "supplier":0
+       },
+       {
+          "serial_no":10828,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0635\u0627\u0644\u062d \u0627\u0628\u0648 \u0634\u0646\u0628 ",
+          "zone_title":"\u0627\u0644\u0648\u0633\u0637\u0649",
+          "record_date":"2018-01-13 18:09:40",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4379,
+          "supplier":0
+       },
+       {
+          "serial_no":10827,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0645\u062d\u0645\u062f \u0639\u0644\u0627\u0621 \u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0633\u0643\u064a\u0643 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-13 18:05:55",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":2827,
+          "supplier":0
+       },
+       {
+          "serial_no":10795,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0645\u0646\u0627\u0644 \u0627\u0644\u0645\u0634\u0647\u0631\u0627\u0648\u064a ",
+          "zone_title":null,
+          "record_date":"2018-01-11 20:31:42",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4376,
+          "supplier":0
+       },
+       {
+          "serial_no":10753,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0641\u0631\u062c \u0639\u0628\u062f\u0647 ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-11 17:52:33",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4369,
+          "supplier":0
+       },
+       {
+          "serial_no":10734,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u062d\u0627\u0645\u062f \u062d\u0646\u064a\u0641 ",
+          "zone_title":null,
+          "record_date":"2018-01-10 21:52:39",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4366,
+          "supplier":0
+       },
+       {
+          "serial_no":10713,
+          "type_title":"\u0627\u0633\u062a\u0641\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",
+          "full_name":"\u0639\u0627\u0645\u0631 \u0627\u0633\u0639\u062f \u0633\u0639\u062f ",
+          "zone_title":null,
+          "record_date":"2018-01-10 20:42:43",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":4365,
+          "supplier":0
+       },
+       {
+          "serial_no":10698,
+          "type_title":"\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u0633\u062a\u0641\u064a\u062f",
+          "full_name":"\u0634\u0627\u062f\u064a \u0639\u0635\u0627\u0645 \u0641\u0647\u0645\u064a \u0648\u0634\u0627\u062d ",
+          "zone_title":"\u063a\u0632\u0629",
+          "record_date":"2018-01-10 19:53:36",
+          "redirect_to_sector_title":null,
+          "redirect_to_employee_name":null,
+          "invoke_by_username":null,
+          "person_serial_no":346,
+          "supplier":0
+       }
+    ],
+    "from":1,
+    "last_page":25,
+    "path":"http:\/\/localhost\/ACCORD\/calls\/datatable",
+    "per_page":30,
+    "to":30,
+    "total":726
+ }
