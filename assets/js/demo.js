@@ -1,5 +1,5 @@
 $(function() {
-    var initOptions = {
+    $("#brisk-demo").briskDataTable({
         language: 'en', //avaliable languages are ['ar', 'en'], default language is 'ar'
         direction: "rtl", //['rtl', 'ltr'] and the default is table language direction
         filters: {
@@ -10,11 +10,6 @@ $(function() {
         },
         datatable: {
             title: "Brisk DataTable Demo", //Comes from backend JSON by default, and you can override it here
-            resource: {
-                base_url: 'http://domain-name.com',
-                entity: '/resource',
-                datatable: '/datatable-get-method' //required returned JSON format was described in the beginning of README 
-            },
             classes: [],
             buttons: [
                 {
@@ -66,18 +61,18 @@ $(function() {
     
                 return row;
             }
+        },
+        resource: {
+            api: 'http://domain-name.com',
+            entity: 'resource',
+            datatable: 'datatable-get-method' //required returned JSON format was described in the beginning of README 
         }
-    };
-
-    var briskDemo = new $.BriskDataTable($("#brisk-demo"), initOptions);
-
-    briskDemo.InitBrisk();
-    briskDemo.get(); 
+    });
 
     /**
      * You can access any method of the injected buttons to the table using this format, by [data_action] which you already declared in the options:
      */
-    briskDemo.datatable.element.find('[data-action="insert"]').click(function(){
+    $("#brisk-demo").find('[data-action="insert"]').on('click', function(){
         alert();
     });
 });
