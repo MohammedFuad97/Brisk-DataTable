@@ -83,7 +83,6 @@
 
                     $this.data('briskTableSettings', instanceSettings);
 
-                            
                     /**
                      * START:: HTML Templates Appending
                      */
@@ -192,7 +191,7 @@
                     });
 
                     $datatableElement.on('click.internalFunctions', 'ul.pagination a[data-page-id]', function(){
-                        internalFunctions.datatable.current_page = $this.attr('data-page-id');
+                        instanceSettings.datatable.current_page = $(this).attr('data-page-id');
                         internalFunctions.get.call($this[0]);
                     });
                     
