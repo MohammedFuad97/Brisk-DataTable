@@ -196,17 +196,17 @@
                     });
                     
                     $datatableElement.on('click.internalFunctions', 'table thead tr th[data-sort]', function(){
-                        internalFunctions.orderBy($this.data('sort'));
+                        instanceSettings.orderBy($(this).data('sort'));
                         internalFunctions.get.call($this[0]);
                     }); 
                     
                     $filterElement.on('change.internalFunctions', '#filters-status', function(){
-                        internalFunctions.filters.active = Number($this.val());
+                        instanceSettings.filters.active = Number($(this).val());
 
-                        if(internalFunctions.filters.active){
-                            internalFunctions.filters.element.find('.panel-body').fadeIn();
+                        if(instanceSettings.filters.active){
+                            $filterElement.find('.panel-body').fadeIn();
                         }else{
-                            internalFunctions.filters.element.find('.panel-body').fadeOut();
+                            $filterElement.find('.panel-body').fadeOut();
                             internalFunctions.get.call($this[0]);
                         }
                     }); 
@@ -272,7 +272,7 @@
                     URL += "&filters_status=" + internalSettings.filters.active;
 
                     if(internalSettings.filters.active){
-                        internalSettings.filters.element.find('[name]').each(function() {
+                        $(this).find('.brisk-filters [name]').each(function() {
                             URL += "&" + $(this).attr('name') + "=" + $(this).val();
                         }); 
                     }
@@ -302,7 +302,8 @@
                     }, 1000);
                 });
             },
-            setFilters: function(filters) {                
+            setFilters: function(filters) {    
+                var $this = $(this);
                 var internalSettings = $(this).data('briskTableSettings');
 
                 if(!internalSettings.filters.enable){
@@ -330,7 +331,7 @@
                     /**
                      * START:: Classes Init.
                      */
-                    if(filter.classes.length > 0){
+                    if(filter.classes !== undefined && filter.classes.length > 0){
                         $.each(filter.classes, function(filter_key, filter_class){
                             filter_default_classes.push(filter_class);
                         });
@@ -364,7 +365,7 @@
                     }
                     html += '</div>';
 
-                    $(this).find('.brisk-filters .panel-body').append(html);
+                    $this.find('.brisk-filters .panel-body').append(html);
                 });
                 //END:: Filters Appending
 
