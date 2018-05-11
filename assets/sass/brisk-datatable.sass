@@ -1,142 +1,145 @@
-.panel
-    margin-bottom: 20px
-    border: 1px solid transparent
-    border-radius: 4px
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05)
-    box-shadow: 0 1px 1px rgba(0,0,0,.05)
-    border-color: #ddd
-    color: #555
-
-    .panel-heading 
-        color: #333
-        background-color: #fafafa
+.brisk-panel
+    .panel
+        margin-bottom: 20px
+        border: 1px solid transparent
+        border-radius: 4px
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05)
+        box-shadow: 0 1px 1px rgba(0,0,0,.05)
         border-color: #ddd
-        border-bottom: 2px solid #ececec
+        color: #555
 
-        .panel-heading-controls
-            float: right
-            height: 0
+        .panel-heading 
+            color: #333
+            background-color: #fafafa
+            border-color: #ddd
+            border-bottom: 2px solid #ececec
 
-            button
-                outline: none
-                
-                .fa
-                    margin-top: 3px
+            .panel-heading-controls
+                float: right
+                height: 0
 
-            .pagination
-                margin-left: 10px
-                padding: 0
-                white-space: nowrap
+                button
+                    outline: none
+                    
+                    .fa
+                        margin-top: 3px
 
-                &.pagination-xs
-                    margin-top: -1px
+                .pagination
+                    margin-left: 10px
+                    padding: 0
+                    white-space: nowrap
 
-                li
-                    a, span
-                        cursor: pointer
-                        position: relative
-                        float: left
-                        padding: 4px 8px
-                        line-height: 1.4
-                        text-decoration: none
-                        color: #7b7b7b
-                        background-color: transparent
-                        border: 1px solid #e4e4e4
-                        margin-right: 5px
-                        border-radius: 2px
-                        font-size: 10px
-                    a:hover 
-                        border-color: #1d89cf
+                    &.pagination-xs
+                        margin-top: -1px
 
-                    &.active
-                        a
-                            color: #fff
-                            background: #1d89cf
+                    li
+                        a, span
+                            cursor: pointer
+                            position: relative
+                            float: left
+                            padding: 4px 8px
+                            line-height: 1.4
+                            text-decoration: none
+                            color: #7b7b7b
+                            background-color: transparent
+                            border: 1px solid #e4e4e4
+                            margin-right: 5px
+                            border-radius: 2px
+                            font-size: 10px
+                        a:hover 
                             border-color: #1d89cf
-                            &:focus
-                            &:hover
+
+                        &.active
+                            a
                                 color: #fff
                                 background: #1d89cf
                                 border-color: #1d89cf
-                        span
-                            color: #fff
-                            background: #1d89cf
-                            border-color: #1d89cf
-            
-            *+*
-                margin-left: 4px
-            
-            *
-                display: block
-                float: left 
+                                &:focus
+                                &:hover
+                                    color: #fff
+                                    background: #1d89cf
+                                    border-color: #1d89cf
+                            span
+                                color: #fff
+                                background: #1d89cf
+                                border-color: #1d89cf
+                
+                *+*
+                    margin-left: 4px
+                
+                *
+                    display: block
+                    float: left 
 
-    .panel-body 
-        padding: 0
+        .panel-body 
+            padding: 0
 
-        table
-            border-collapse: collapse
-            border-spacing: 0
-            margin-bottom: 0
+            table
+                border-collapse: collapse
+                border-spacing: 0
+                margin-bottom: 0
 
-            thead 
-                tr 
-                    th
-                        &[data-sort]
-                            cursor: pointer
-                            i
-                                &.fa
-                                float: left
+                thead 
+                    tr 
+                        th
+                            &[data-sort]
+                                cursor: pointer
+                                i
+                                    &.fa
+                                    float: left
 
-            tbody 
-                display: block
-                overflow: auto
-                position: relative
-                height: 70vh
+                tbody 
+                    display: block
+                    overflow: auto
+                    // position: relative
+                    height: 70vh
 
-                tr 
-                    &:nth-child(odd)
-                        td, th 
-                            background-color: #f5f5f5
-                            border-top: 1px solid #e4e4e4
-                    
-                    td
-                        &.rows-alternative
-                            text-align: center
-
-                    &.footer
-                        // position: sticky
-                        position: absolute
-                        right: 0
-                        bottom: 0
-                        width: 100%
-                        background: #f9f9f9
-                        border-top: solid 1px #e4e4e4
+                    tr 
+                        &:nth-child(odd)
+                            td, th 
+                                background-color: #f5f5f5
+                                border-top: 1px solid #e4e4e4
                         
                         td
-                            border: none
-                            padding: 0 5px
-                            padding-right: 6px
-                            font-size: 14px
-                                
-                            span
-                                &.info
-                                    position: absolute
-                                    top: 0
-                                    // left: 5px
-                                    right: 5px
+                            &.rows-alternative
+                                text-align: center
 
-            thead, 
-            tbody tr 
-                display: table
-                width: 100%
-                table-layout: fixed
+                        &.footer
+                            // position: sticky
+                            position: absolute
+                            right: 0
+                            bottom: -20px
+                            width: 100.15%
+                            background: #f9f9f9
+                            // border-top: solid 1px #e4e4e4
+                            border: solid 1px #e4e4e4
+                            margin-right: -2px
+                            
+                            td
+                                border: none
+                                padding: 0 5px
+                                padding-right: 6px
+                                font-size: 14px
+                                    
+                                span
+                                    &.info
+                                        position: absolute
+                                        top: 0
+                                        // left: 5px
+                                        right: 5px
 
-.panel
-    &.brisk-filters
-        .panel-body
-            padding: 15px
+                thead, 
+                tbody tr 
+                    display: table
+                    width: 100%
+                    table-layout: fixed
 
-        .panel-heading-controls
-            .filters-switch
-                padding: 0
-                height: 22px
+    .panel
+        &.brisk-filters
+            .panel-body
+                padding: 15px
+
+            .panel-heading-controls
+                .filters-switch
+                    padding: 0
+                    height: 22px

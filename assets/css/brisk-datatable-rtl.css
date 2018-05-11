@@ -1,19 +1,19 @@
-.panel.rtl {
+.brisk-panel .panel.rtl {
   direction: rtl; }
-  .panel.rtl.brisk-filters .panel-body > div {
+  .brisk-panel .panel.rtl.brisk-filters .panel-body > div {
     float: right; }
-  .panel.rtl .panel-heading-controls {
+  .brisk-panel .panel.rtl .panel-heading-controls {
     float: left; }
-    .panel.rtl .panel-heading-controls * + * {
+    .brisk-panel .panel.rtl .panel-heading-controls * + * {
       margin-left: 0;
       margin-right: 4px; }
-    .panel.rtl .panel-heading-controls * {
+    .brisk-panel .panel.rtl .panel-heading-controls * {
       float: right; }
-  .panel.rtl table thead tr th {
+  .brisk-panel .panel.rtl table thead tr th {
     text-align: right; }
-  .panel.rtl table tbody tr.footer {
+  .brisk-panel .panel.rtl table tbody tr.footer {
     margin-left: 17px; }
-    .panel.rtl table tbody tr.footer td span.info {
+    .brisk-panel .panel.rtl table tbody tr.footer td span.info {
       left: 5px;
       right: auto; }
 
